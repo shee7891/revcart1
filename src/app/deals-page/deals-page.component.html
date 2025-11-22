@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Deals & Offers</h2>
+  <p class="subtitle">Save big on your favorite products</p>
+
+  <div class="grid">
+    <app-product-card 
+      *ngFor="let item of products"
+      [product]="item">
+    </app-product-card>
+  </div>
+</div>
+

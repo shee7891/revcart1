@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="discount" *ngIf="product.discount">
+    {{ product.discount }}% OFF
+  </div>
+
+  <img [src]="product.img" alt="{{ product.name }}" />
+
+  <h3>{{ product.name }}</h3>
+  <p class="category">{{ product.category }}</p>
+
+  <div class="rating">
+    ⭐ {{ product.rating }}
+    <span>({{ product.reviews }})</span>
+  </div>
+
+  <p class="price">
+    ${{ product.price }}
+    <span class="unit">{{ product.unit }}</span>
+  </p>
+
+  <button class="add-btn">Add to Cart</button>
+</div>
+
